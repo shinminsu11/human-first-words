@@ -1,0 +1,603 @@
+[
+
+  {
+
+    "target_word": "computer",
+
+    "애초말_원형_소리": ["꼼풀떠"],
+
+    "action_code": ["action_untangle_solve"],
+
+    "core_formula": "꼬인 것을 풀떠 → 꼼풀떠 = computer"
+
+  },
+
+  {
+
+    "target_word": "control",
+
+    "애초말_원형_소리": ["걸어 다루떠"],
+
+    "action_code": ["action_restrain_and_manage"],
+
+    "core_formula": "걸어 다룰떠 → 건다룰 → control"
+
+  },
+
+  {
+
+    "target_word": "net",
+
+    "애초말_원형_소리": ["렦떠"],
+
+    "action_code": ["action_weave_mesh"],
+
+    "core_formula": "렦떠 → ㄲ탈락 = net"
+
+  },
+
+  {
+
+    "target_word": "internet",
+
+    "애초말_원형_소리": ["안 들어 렦떠"],
+
+    "action_code": ["action_enter_and_network"],
+
+    "core_formula": "안 들어 렦떠 → ㄲ탈락 = internet"
+
+  },
+
+  {
+
+    "target_word": "enter",
+
+    "애초말_원형_소리": ["안 들어떠"],
+
+    "action_code": ["action_go_inside"],
+
+    "core_formula": "안(으로) 들어떠 → 안 들어 = enter"
+
+  },
+
+  {
+
+    "target_word": "delete",
+
+    "애초말_원형_소리": ["떨어떠"],
+
+    "action_code": ["action_detach_remove"],
+
+    "core_formula": "(붙은것을) 떨어떠 = delete"
+
+  },
+
+  {
+
+    "target_word": "shift",
+
+    "애초말_원형_소리": ["꽈보떠"],
+
+    "action_code": ["action_twist_and_change"],
+
+    "core_formula": "(서로) 꽈보떠 → ㄲ의 ㅅ화(S-mutation) = shift"
+
+  },
+
+  {
+
+    "target_word": "memory",
+
+    "애초말_원형_소리": ["머물러떠"],
+
+    "action_code": ["action_stay_retain"],
+
+    "core_formula": "머물러떠 → 머물러 = memory"
+
+  },
+
+  {
+
+    "target_word": "date",
+
+    "애초말_원형_소리": ["닿아있떠/다있떠"],
+
+    "action_code": ["action_touch_connect"],
+
+    "core_formula": "닿아있떠 → 다있떠 = date"
+
+  },
+
+  {
+
+    "target_word": "web",
+
+    "애초말_원형_소리": ["꽈버려떠"],
+
+    "action_code": ["action_entangle_mesh"],
+
+    "core_formula": "(서로) 꽈버려떠 → ㄲ탈락(K-omission) → 와버 = web"
+
+  },
+
+  {
+
+    "target_word": "link",
+
+    "애초말_원형_소리": ["렦은거떠"],
+
+    "action_code": ["action_connect_tie"],
+
+    "core_formula": "렦은거떠 → 렦은거 = link"
+
+  },
+
+  {
+
+    "target_word": "click",
+
+    "애초말_원형_소리": ["걸어 꽈떠"],
+
+    "action_code": ["action_hook_and_press"],
+
+    "core_formula": "걸어 꽈떠 → 걸꽈 = click"
+
+  },
+
+  {
+
+    "target_word": "algorithm",
+
+    "애초말_원형_소리": ["알고 잇어음떠"],
+
+    "action_code": ["action_logic_sequence"],
+
+    "core_formula": "알고 잇어음떠 → 알고 잇음 = algorithm"
+
+  },
+
+  {
+
+    "target_word": "arch",
+
+    "애초말_원형_소리": ["꽛지떠"],
+
+    "action_code": ["action_curve_twist"],
+
+    "core_formula": "(둥굴게) 꽛지떠 → ㄲ탈락(K-omission) → 아지 = arch"
+
+  },
+
+  {
+
+    "target_word": "architect",
+
+    "애초말_원형_소리": ["꽛지떠", "탁"],
+
+    "action_code": ["action_curve_and_strike"],
+
+    "core_formula": "(건축재료를) 꽛지떠 + (망치로) 탁떠 → ㄲ탈락 → 아치탁 = architect"
+
+  },
+
+  {
+
+    "target_word": "program",
+
+    "애초말_원형_소리": ["풀어 그림떠"],
+
+    "action_code": ["action_unfold_and_draw"],
+
+    "core_formula": "풀어 그림떠 → 풀어그림 = program"
+
+  },
+
+  {
+
+    "target_word": "finger",
+
+    "애초말_원형_소리": ["핀거떠"],
+
+    "action_code": ["action_unfold_extend"],
+
+    "core_formula": "(주먹상태서) 핀거떠 → 핀거 = finger"
+
+  },
+
+  {
+
+    "target_word": "count",
+
+    "애초말_원형_소리": ["꼰떠"],
+
+    "action_code": ["action_bend_and_reckon"],
+
+    "core_formula": "(손가락을) 꼰떠 = count"
+
+  },
+
+  {
+
+    "target_word": "device",
+
+    "애초말_원형_소리": ["두떠/둬봤떠"],
+
+    "action_code": ["action_place_apparatus"],
+
+    "core_formula": "(자리에) 둬봤떠 → 둬봤어 = device"
+
+  },
+
+  {
+
+    "target_word": "system",
+
+    "애초말_원형_소리": ["끼떠/껴서됨떠"],
+
+    "action_code": ["action_interlock_and_form"],
+
+    "core_formula": "껴서됨떠 → 끼서됨 → ㄲ의 ㅅ화(K-to-S mutation) → 시서됨 = system"
+
+  },
+
+  {
+
+    "target_word": "input",
+
+    "애초말_원형_소리": ["안에 붙떠"],
+
+    "action_code": ["action_put_inside"],
+
+    "core_formula": "안(에)붙떠 = input"
+
+  },
+
+  {
+
+    "target_word": "out",
+
+    "애초말_원형_소리": ["나오떠"],
+
+    "action_code": ["action_move_outside"],
+
+    "core_formula": "나오떠 → ㄴ탈락(N-omission) → 아오떠 → 아옫 = out"
+
+  },
+
+  {
+
+    "target_word": "output",
+
+    "애초말_원형_소리": ["나오떠", "붙떠"],
+
+    "action_code": ["action_extract_and_place"],
+
+    "core_formula": "나오떠 붙떠 → 나오붙 → ㄴ탈락(N-omission) → 아옫붙 = output"
+
+  },
+
+  {
+
+    "target_word": "screen",
+
+    "애초말_원형_소리": ["쓱 가리떠/쓱 가린떠"],
+
+    "action_code": ["action_shield_partition"],
+
+    "core_formula": "쓱 가린떠 → 쓱가린 = screen"
+
+  },
+
+  {
+
+    "target_word": "file",
+
+    "애초말_원형_소리": ["펴떠/펴일떠"],
+
+    "action_code": ["action_flatten_and_arrange"],
+
+    "core_formula": "(평평하게) 펴일떠 → 펴일 = file"
+
+  },
+
+  {
+
+    "target_word": "key",
+
+    "애초말_원형_소리": ["켜떠/키떠"],
+
+    "action_code": ["action_turn_on_ignite"],
+
+    "core_formula": "(불을) 키 = key"
+
+  },
+
+  {
+
+    "target_word": "board",
+
+    "애초말_원형_소리": ["파르떠"],
+
+    "action_code": ["action_flatten_board"],
+
+    "core_formula": "평평하떠 → 파르떠 → ㅍ의 ㅂ화(P-to-B mutation) → 바르떠 = board"
+
+  },
+
+  {
+
+    "target_word": "keyboard",
+
+    "애초말_원형_소리": ["키떠/켜떠", "파르떠"],
+
+    "action_code": ["action_switch_on_flat_surface"],
+
+    "core_formula": "키떠 + 파르떠(평평) →키 + 파르떠 → ㅍ의 ㅂ화(P-to-B mutation) → 키바르떠 = keyboard"
+
+  },
+
+  {
+
+    "target_word": "print",
+
+    "애초말_원형_소리": ["파르떠/바른떠"],
+
+    "action_code": ["action_spread_ink_flat"],
+
+    "core_formula": "원형(파른떠) → ㅍ의 ㅂ화(일상어: 바른떠) / 원형 파동 보존 = print"
+
+  },
+
+  {
+
+    "target_word": "scan",
+
+    "애초말_원형_소리": ["쓱 가떠/쓱 간떠"],
+
+    "action_code": ["action_sweep_and_read"],
+
+    "core_formula": "쓱 간떠 → 쓱간 = scan"
+
+  },
+
+  {
+
+    "target_word": "error",
+
+    "애초말_원형_소리": ["잃떠/잃어떠"],
+
+    "action_code": ["action_lose_track"],
+
+    "core_formula": "잃어떠 → 잃어 = error"
+
+  },
+
+  {
+
+    "target_word": "phone",
+
+    "애초말_원형_소리": ["보떠/본떠"],
+
+    "action_code": ["action_visualize_sound"],
+
+    "core_formula": "(눈으로) 본떠 → 본 = phone"
+
+  },
+
+  {
+
+    "target_word": "smart",
+
+    "애초말_원형_소리": ["맑떠"],
+
+    "action_code": ["action_clear_mind_sharp"],
+
+    "core_formula": "s + 맑떠 = smart"
+
+  },
+
+  {
+
+    "target_word": "smartphone",
+
+    "애초말_원형_소리": ["맑떠", "보떠/본떠"],
+
+    "action_code": ["action_smart_visual_device"],
+
+    "core_formula": "s + 맑떠 + 본떠 → s맑떠본 = smartphone"
+
+  },
+
+  {
+
+    "target_word": "telephone",
+
+    "애초말_원형_소리": ["떨떠", "보떠/본떠"],
+
+    "action_code": ["action_wave_communication_device"],
+
+    "core_formula": "떨떠 본떠 → 떨어(파동) + 본 = telephone"
+
+  },
+
+  {
+
+    "target_word": "television",
+
+    "애초말_원형_소리": ["떨떠", "비친떠"],
+
+    "action_code": ["action_project_wave_vision"],
+
+    "core_formula": "떨떠(파동) + 비친떠 → 떨어비친 = television"
+
+  },
+
+  {
+
+    "target_word": "hand",
+
+    "애초말_원형_소리": ["걸떠/건떠"],
+
+    "action_code": ["action_hook_and_hold"],
+
+    "core_formula": "건떠(잡다) → ㄱ의 ㅎ화(K-to-H mutation) = hand"
+
+  },
+
+  {
+
+    "target_word": "login",
+
+    "애초말_원형_소리": ["렦인떠"],
+
+    "action_code": ["action_weave_into_system"],
+
+    "core_formula": "렦인떠 → 렦인 = login"
+
+  },
+
+  {
+
+    "target_word": "analog",
+
+    "애초말_원형_소리": ["하나렦어떠"],
+
+    "action_code": ["action_unify_and_continuous_link"],
+
+    "core_formula": "하나렦어떠 → 하나렦어 → ㅎ탈락(H-omission) → 아나렦어 = analog"
+
+  },
+
+  {
+
+    "target_word": "digital",
+
+    "애초말_원형_소리": ["떼져될떠"],
+
+    "action_code": ["action_separate_and_discrete"],
+
+    "core_formula": "떼져될떠 → 떼져될 = digital"
+
+  },
+
+  {
+
+    "target_word": "hardware",
+
+    "애초말_원형_소리": ["꼬떠"],
+
+    "action_code": ["action_solid_ware"],
+
+    "core_formula": "(단단히) 꼬떠 + ware → ㄲ의 ㅎ화(k-to-h mutation) → 호떠 + ware = hardware"
+
+  },
+
+  {
+
+    "target_word": "software",
+
+    "애초말_원형_소리": ["술술 풀떠"],
+
+    "action_code": ["action_flexible_ware"],
+
+    "core_formula": "술술 풀떠 + ware → ㄹ탈락(l-omission) → 스프떠 + ware = software"
+
+  },
+
+  {
+
+    "target_word": "process",
+
+    "애초말_원형_소리": ["아프로 갔떠"],
+
+    "action_code": ["action_forward_step_process"],
+
+    "core_formula": "아프로 갔떠 → 아프로 갔어 → 아탈락(a-omission) → 프로갔어 → ㄱ의 ㅅ화(k-to-s mutation) → 프로샀어 = process"
+
+  },
+
+  {
+
+    "target_word": "drag",
+
+    "애초말_원형_소리": ["달려가떠"],
+
+    "action_code": ["action_heavy_pull_move"],
+
+    "core_formula": "(힘들게) 달려가떠 → 달려가 = drag"
+
+  },
+
+  {
+
+    "target_word": "bug",
+
+    "애초말_원형_소리": ["박어떠"],
+
+    "action_code": ["action_stuck_fault"],
+
+    "core_formula": "잘못되게 박어떠 → 박어 = bug"
+
+  },
+
+  {
+
+    "target_word": "applicate",
+
+    "애초말_원형_소리": ["앞 풀리겠떠"],
+
+    "action_code": ["action_unfold_to_use"],
+
+    "core_formula": "(실제로) 앞 풀리겠떠 → 앞풀리겠어 = applicate"
+
+  },
+
+  {
+
+    "target_word": "windows",
+
+    "애초말_원형_소리": ["분떠", "들어오떠"],
+
+    "action_code": ["action_wind_enter_open"],
+
+    "core_formula": "(바람이) 분떠 + 들어오떠 → ㅂ탈락(b-omission) → 운 + 들어 = windows"
+
+  },
+
+  {
+
+    "target_word": "navigate",
+
+    "애초말_원형_소리": ["나붓끼떠"],
+
+    "action_code": ["action_steer_and_move"],
+
+    "core_formula": "(바람에 돗대가) 나붓끼떠 → 나붓끼 → navigate"
+
+  },
+
+  {
+
+    "target_word": "google",
+
+    "애초말_원형_소리": ["구굴려떠"],
+
+    "action_code": ["action_roll_sphere"],
+
+    "core_formula": "(원) 구 굴려떠 → 구굴려 = google"
+
+  },
+
+  {
+
+    "target_word": "network",
+
+    "애초말_원형_소리": ["렦떠 박어떠"],
+
+    "action_code": ["action_weave_and_fix_mesh"],
+
+    "core_formula": "렦떠 박어떠 → ㄲ탈락(k-omission) → 려떠 박어 → ㅂ탈락(b-omission) → 려떠 아거 → ㄹ의 ㄴ화(r-to-n mutation) = network"
+
+  }
+
+]
