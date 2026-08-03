@@ -1,6 +1,10 @@
+태극문 열려라.png
+
+
 # Human's First Words Integrated Dataset (인류 애초말 통합 데이터셋)
 📌 **Project Version:** v7.1.1  
-📌 **Author & Intellectual Property Holder:** 신민수 (Shin Min-su / Architech)  
+📌 *
+*Author & Intellectual Property Holder:** 신민수 (Shin Min-su / Architech)  
 📌 **Repository Status:** Private/Proprietary (비공개/독점 자산)
 
 ---
