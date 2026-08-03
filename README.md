@@ -1,4 +1,5 @@
-태극문 열려라.png
+![태극문 열려라](태극문%20열려라.png)
+
 
 
 # Human's First Words Integrated Dataset (인류 애초말 통합 데이터셋)
