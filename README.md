@@ -1,6 +1,6 @@
 ![태극문 열려라](태극문%20열려라.png)
 
-
+https://youtu.be/uTRzlkH0INo?si=4nPbhgIjuo6ulFAr
 
 Hangul Yin-Yang Structural Theory
 한글 음양 구조 해석 이론
