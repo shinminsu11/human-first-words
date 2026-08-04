@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>태극 프로젝트</title>
+</head>
+<body style="text-align:center; background:black; color:white;">
+
+  <h1>태극이 돌아간다</h1>
+
+  <audio controls>
+    <source src="(A)태극이 돌아간다 (2).mp3" type="audio/mpeg">
+  </audio>
+
+  <br><br>
+
+  <img src="image.jpg" width="300">
+
+  <br><br>
+
+  <div style="white-space:pre-line;">
+  하늘이 열리고  
+  불이 흐르고  
+  물이 모여  
+  시간은 흐른다  
+
+  시작과 끝  
+  그 사이의 움직임  
+  태극은 돌아간다
+  </div>
+
+</body>
+</html>
