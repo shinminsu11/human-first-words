@@ -1,6 +1,6 @@
 ![태극문 열려라](태극문%20열려라.png)
 ![](복희%20여와%20한글.png)
-![복희 여와](복희 여와.png).
+![복희 여와](복희%20여와.png).
 
 태극사상 해설(YTN 미공개 동영상)
 https://youtu.be/uTRzlkH0INo?si=4nPbhgIjuo6ulFAr
