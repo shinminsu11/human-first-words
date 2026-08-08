@@ -3,7 +3,7 @@
 ![](복희.png)
 
 <video width="100%" controls>
-  <source src="여와 복희 한글.mp4" type="video/mp4">
+  <source src="여와%20복희%20한글.mp4" type="video/mp4">
   브라우저가 동영상 재생을 지원하지 않습니다.
 </video>
 
