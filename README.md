@@ -2,14 +2,14 @@
 ![](복희%20여와%20한글.png)
 ![](복희.png)
 
-**[노래모음]**
+🎵[노래모음]
 
 태극문 열려라​▶️
 https://shinminsu11.github.io/human-first-words/
 
 <br><br>
 
-태극사상 해설(YTN 미공개 동영상)
+🎬태극사상 해설(YTN 미공개 동영상)
 https://youtu.be/uTRzlkH0INo?si=4nPbhgIjuo6ulFAr
 
 <br><br>
