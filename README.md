@@ -3,8 +3,7 @@
 ![](복희.png)
 
 🎵[노래모음]
-
-태극문 열려라​▶️
+​▶️태극문 열려라​
 https://shinminsu11.github.io/human-first-words/
 
 <br><br>
