@@ -2,6 +2,12 @@
 ![](복희%20여와%20한글.png)
 ![](복희.png)
 
+<video width="100%" controls>
+  <source src="여와 복희 한글.mp4" type="video/mp4">
+  브라우저가 동영상 재생을 지원하지 않습니다.
+</video>
+
+
 🎵[노래모음]
 
 ​▶️태극문 열려라​
