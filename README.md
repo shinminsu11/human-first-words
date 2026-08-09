@@ -11,10 +11,12 @@ https://shinminsu11.github.io/human-first-words/
 
 ▶️복희 여와
 https://shinminsu11.github.io/human-first-words/player.html
+
 <br><br>
 
 🎬태극사상 해설(YTN 미공개 동영상)
 https://youtu.be/uTRzlkH0INo?si=4nPbhgIjuo6ulFAr
+
 
 <br><br>
 
