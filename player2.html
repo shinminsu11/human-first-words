@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>내 음악</title>
+<title>태극 플레이어</title>
 
 <style>
 body {
@@ -10,11 +10,6 @@ body {
   color: white;
   text-align: center;
   font-family: sans-serif;
-}
-
-.artwork {
-  width: 250px;
-  margin: 20px;
 }
 
 button {
@@ -27,12 +22,76 @@ button {
   background: blue;
   color: white;
 }
+
+#lyricsBox {
+  margin-top: 20px;
+  white-space: pre-line;
+  display: none;
+}
 </style>
 </head>
 
 <body>
 
-<h1>🎵 내 음악</h1>
+<h1>🎵 태극 플레이어</h1>
 
-<!-- 🔥 한글 파일명 (인코딩 적용) -->
-<img src="%ED%83%9C%EA%B7%B9%EB%AC%B8
+<button onclick="playMusic('taegeuk.mp3', this, 0)">태극문 열려라</button>
+<button onclick="playMusic('taegeuk1.mp3', this, 1)">태극이 돌아간다</button>
+
+<br>
+
+<button onclick="toggleLyrics()">가사 보기</button>
+
+<p id="now">현재 재생: 없음</p>
+
+<audio id="player" controls></audio>
+
+<div id="lyricsBox"></div>
+
+<script>
+// 🔥 가사 직접 넣는 곳
+const lyrics = [
+`여기에 태극문 열려라 가사 넣기`,
+`여기에 태극이 돌아간다 가사 넣기`
+];
+
+let currentIndex = -1;
+
+function playMusic(file, btn, index) {
+  const player = document.getElementById("player");
+  const now = document.getElementById("now");
+
+  player.src = file;
+  player.play();
+
+  currentIndex = index;
+
+  // 버튼 색 변경
+  document.querySelectorAll("button").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+
+  now.innerText = "현재 재생: " + file;
+
+  // 가사 초기화
+  document.getElementById("lyricsBox").style.display = "none";
+}
+
+function toggleLyrics() {
+  const box = document.getElementById("lyricsBox");
+
+  if (currentIndex === -1) {
+    alert("먼저 곡을 재생하세요");
+    return;
+  }
+
+  if (box.style.display === "none") {
+    box.style.display = "block";
+    box.innerText = lyrics[currentIndex];
+  } else {
+    box.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
