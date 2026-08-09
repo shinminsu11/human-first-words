@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>태극 음악 플레이어</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Malgun Gothic', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .player-container {
+            width: 340px;
+            background: linear-gradient(135deg, #2b2b2b, #111111);
+            border-radius: 24px;
+            padding: 30px 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            text-align: center;
+            border: 1px solid #333;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+        .now-playing {
+            background-color: #1a2332;
+            border: 1px solid #2d3b55;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 25px;
+            font-size: 15px;
+            color: #b0c4de;
+        }
+        .now-playing span {
+            color: #ffd700;
+            font-weight: bold;
+        }
+        audio {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+        }
+        .btn {
+            flex: 1;
+            background-color: #ffffff;
+            color: #000000;
+            border: none;
+            padding: 12px;
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .btn:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="player-container">
+    <h2>태극 음악</h2>
+    
+    <div class="now-playing">
+        🎵 현재 재생 중 : <span>태극문 열려라</span>
+    </div>
+
+    <!-- 브라우저에서 바로 재생 가능한 오디오 플레이어 (파일 이름은 영문 taegeuk.mp3 연동) -->
+    <audio controls>
+        <source src="taegeuk.mp3" type="audio/mp3">
+        브라우저가 오디오 재생을 지원하지 않습니다.
+    </audio>
+
+    <div class="btn-group">
+        <button class="btn" onclick="alert('재생 시작!')">▶ 재생</button>
+        <button class="btn" onclick="alert('다음 곡으로 이동합니다.')">⏭ 다음곡</button>
+    </div>
+</div>
+
+</body>
+</html>
