@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>태극 음악 노래방</title>
+    <title>태극 음악 아카이브</title>
     <style>
         body {
             margin: 0;
@@ -44,11 +44,12 @@
         }
         .song-selector {
             display: flex;
-            gap: 15px;
+            flex-direction: column;
+            gap: 10px;
             margin-bottom: 20px;
         }
         .song-btn {
-            flex: 1;
+            width: 100%;
             background-color: #1a2030;
             color: #8a9bb8;
             border: 1px solid #2d3b59;
@@ -112,11 +113,12 @@
 
 <div class="container">
     <img src="태극문 열려라.png" alt="태극문 열려라" class="artwork">
-    <h1>태극 음악 노래방</h1>
+    <h1>태극 음악 아카이브</h1>
 
     <div class="song-selector">
-        <button class="song-btn active" id="btn1" onclick="switchSong(1)">🎵 태극문 열려라</button>
-        <button class="song-btn" id="btn2" onclick="switchSong(2)">🎵 태극이 돌아간다</button>
+        <button class="song-btn active" id="btn1" onclick="switchSong(1)">🎵 1곡: 태극문 열려라</button>
+        <button class="song-btn" id="btn2" onclick="switchSong(2)">🎵 2곡: 태극이 돌아간다</button>
+        <button class="song-btn" id="btn3" onclick="switchSong(3)">🎵 3곡: (유아용) 태극엔진 돌아라</button>
     </div>
 
     <div class="now-playing">
@@ -426,7 +428,78 @@ KICK IN
 
 짝…`;
 
-    // 페이지가 처음 켜질 때 첫 번째 곡 가사 자동 입력
+    const lyrics3 = `[Intro]
+태극문 열려라
+
+[Verse 1]
+
+오른쪽 오른다 Right 양
+왼쪽 내린다 Left 음
+
+태극이 돌아간다
+
+카라 하나 간다
+뜨르 둘 들어온다
+
+
+트르서 셋 터진다 솟는다
+너르서 넷 넣다 내려간다
+
+
+트르서서 다섯 뿌르 뿌려라
+너르서서 여섯 모르 몰려라
+
+
+일곱 꾸르 꾸부려 꺾어라
+여덟 피르 펴라 펼쳐라
+
+
+아홉 리을 태극엔진 돌아라 돌아라
+여르 열 열려라
+
+
+[Verse 2]
+오른쪽 오른다 Right 양
+왼쪽 내린다 Left 음
+
+태극이 돌아간다
+
+하나 둘 앞뒤축 선
+셋 넷 동서축 면
+다섯 여섯 남북축 입체
+
+앞뒤동서남북 세축
+삼합육생 팽창의 끝 더 이상 갈 곳이 없다 꺾어라 
+일 구부려 꺾어 일 구부려 꺾어 꺾어라 
+일곱 큐브 큐브 큐브
+여덟 팔괘 펼쳐라 펼쳐라 
+
+아홉 태극엔진 돌아라 
+
+열 여르 열려라
+
+[Drop / Hook]
+
+
+태극이 돌아간다
+태극이 돌아간다
+
+오른쪽 오른다 Right 양
+왼쪽 내려간다 Left 음
+
+오른손과 왼손이 만난다
+열 완성
+
+
+돌고 돈다
+태극이 돈다
+
+태극이 열린다
+
+열 여르 열려라
+열 여르 열려라`;
+
+    // 페이지 첫 로드시 1번 곡 가사 자동 지정
     document.getElementById('lyricsBox').innerText = lyrics1;
 
     function switchSong(songNum) {
@@ -436,19 +509,27 @@ KICK IN
         const lyricsBox = document.getElementById('lyricsBox');
         const btn1 = document.getElementById('btn1');
         const btn2 = document.getElementById('btn2');
+        const btn3 = document.getElementById('btn3');
+
+        btn1.classList.remove('active');
+        btn2.classList.remove('active');
+        btn3.classList.remove('active');
 
         if (songNum === 1) {
             audioSource.src = 'taegeuk.mp3';
             songTitle.innerText = '태극문 열려라';
             lyricsBox.innerText = lyrics1;
             btn1.classList.add('active');
-            btn2.classList.remove('active');
-        } else {
+        } else if (songNum === 2) {
             audioSource.src = 'taegeuk1.mp3';
             songTitle.innerText = '태극이 돌아간다';
             lyricsBox.innerText = lyrics2;
             btn2.classList.add('active');
-            btn1.classList.remove('active');
+        } else if (songNum === 3) {
+            audioSource.src = 'taegeuk2.mp3';
+            songTitle.innerText = '(유아용) 태극엔진 돌아라';
+            lyricsBox.innerText = lyrics3;
+            btn3.classList.add('active');
         }
         audioPlayer.load();
         audioPlayer.play();
