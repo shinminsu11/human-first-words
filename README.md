@@ -31,6 +31,7 @@ Hangul Yin-Yang Structural Theory
 
 💡 Core Idea (핵심 아이디어)
 자음: 에너지의 방향 (발산 / 수용)
+
 모음: 공간의 구조 (확장 / 집중)
 
 
@@ -41,6 +42,7 @@ Hangul Yin-Yang Structural Theory
 
 ☀️ Yang (양 / 발산)
 자음: ㅂ, ㅍ, ㅌ, ㅋ
+
 모음: ㅏ, ㅑ, ㅗ, ㅛ
 
 
