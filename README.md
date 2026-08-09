@@ -6,8 +6,9 @@
 
 🎵[노래모음]
 
-​▶️태극문 열려라​
+​▶️태극
 https://shinminsu11.github.io/human-first-words/
+▶️복희 여와
 
 <br><br>
 
