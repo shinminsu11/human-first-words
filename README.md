@@ -46,7 +46,6 @@ Hangul Yin-Yang Structural Theory
 
 ☀️ Yang (양 / 발산)
 자음: ㅂ, ㅍ, ㅌ, ㅋ
-
 모음: ㅏ, ㅑ, ㅗ, ㅛ
 
 
