@@ -10,7 +10,7 @@
 https://shinminsu11.github.io/human-first-words/
 
 ▶️복희 여와
-https://shinminsu11.github.io/human-first-words/player.html
+https://shinminsu11.github.io/human-first-words/song.html
 
 <br><br>
 
