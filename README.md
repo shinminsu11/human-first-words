@@ -12,6 +12,9 @@ https://shinminsu11.github.io/human-first-words/
 ▶️복희 여와
 https://shinminsu11.github.io/human-first-words/song.html
 
+▶️서로 마주보는 소리
+https://shinminsu11.github.io/human-first-words/song1.html
+
 <br><br>
 
 🎬태극사상 해설(YTN 미공개 동영상)
