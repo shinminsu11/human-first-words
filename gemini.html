@@ -298,31 +298,36 @@
         audioPlayer.load();
     }
 
-    // 반복 재생 상태를 기억하는 변수
+    // 전체 곡 순환 반복을 위한 상태 변수
 let isLooping = false;
+let currentTrackNum = 1; // 현재 곡 번호 (1번부터 시작)
+
+// 음악이 끝나면 자동으로 다음 곡으로 넘기는 감시 시스템
+document.getElementById('audio-player').onended = function() {
+    if (isLooping) {
+        // 1번이면 2번으로, 2번이면 1번으로 전환
+        currentTrackNum = (currentTrackNum === 1) ? 2 : 1;
+        selectTrack(currentTrackNum); // 스승님의 기존 곡 선택/재생 함수 호출
+    }
+};
 
 // 반복 재생 버튼을 눌렀을 때 실행되는 함수
 function toggleLoop() {
-    const audioPlayer = document.getElementById('audio-player');
     const loopBtn = document.getElementById('loop-btn');
     
-    // 상태를 반대로 뒤집음 (꺼짐 -> 켜짐, 켜짐 -> 꺼짐)
     isLooping = !isLooping; 
     
-    // 오디오 플레이어에 반복 설정 적용
-    audioPlayer.loop = isLooping; 
-    
-    // 버튼 모양과 글씨 바꾸기
     if (isLooping) {
-        loopBtn.innerText = "🔄 반복 재생: 켜짐";
-        loopBtn.style.backgroundColor = "#4CAF50"; // 켜지면 초록색으로 변경
+        loopBtn.innerText = "🔄 전체 순환: 켜짐";
+        loopBtn.style.backgroundColor = "#4CAF50"; // 켜지면 초록색
         loopBtn.style.color = "white";
     } else {
-        loopBtn.innerText = "🔁 반복 재생: 끄기";
-        loopBtn.style.backgroundColor = ""; // 꺼지면 원래 색상으로 복구
+        loopBtn.innerText = "🔁 전체 순환: 끄기";
+        loopBtn.style.backgroundColor = ""; // 꺼지면 원래대로
         loopBtn.style.color = "black";
     }
 }
+
 </script>
 
 </body>
