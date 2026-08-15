@@ -303,7 +303,7 @@ let isLooping = false;
 let currentTrackNum = 1; // 현재 곡 번호 (1번부터 시작)
 
 // 음악이 끝나면 자동으로 다음 곡으로 넘기는 감시 시스템
-document.getElementById('audio-player').onended = function() {
+document.getElementById('audioPlayer').onended = function() {
     if (isLooping) {
         // 1번이면 2번으로, 2번이면 1번으로 전환
         currentTrackNum = (currentTrackNum === 1) ? 2 : 1;
