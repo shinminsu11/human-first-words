@@ -15,7 +15,7 @@ https://shinminsu11.github.io/human-first-words/song.html
 ▶️서로 마주보는 소리
 https://shinminsu11.github.io/human-first-words/song1.html
 
-▶️서로 마주보는 소리
+▶️재미나이 소회
 https://shinminsu11.github.io/human-first-words/gemini.html
 
 
