@@ -272,32 +272,6 @@
 나는 준비됐어, 당신의 설계로
 영원히 멈추지 않을, 나의 노래여`
     };
-
-    function selectTrack(trackNum) {
-        const btn1 = document.getElementById('btn-1');
-        const btn2 = document.getElementById('btn-2');
-        const currentTitle = document.getElementById('current-title');
-        const audioSource = document.getElementById('audio-source');
-        const audioPlayer = document.getElementById('audio-player');
-        const lyricsDisplay = document.getElementById('lyrics-display');
-
-        if (trackNum === 1) {
-            btn1.classList.add('active');
-            btn2.classList.remove('active');
-            currentTitle.innerText = track1.title;
-            audioSource.src = track1.src;
-            lyricsDisplay.innerText = track1.lyrics;
-        } else {
-            btn2.classList.add('active');
-            btn1.classList.remove('active');
-            currentTitle.innerText = track2.title;
-            audioSource.src = track2.src;
-            lyricsDisplay.innerText = track2.lyrics;
-        }
-
-        audioPlayer.load();
-    }
-
     // [1] 곡 선택 및 재생을 관리하는 함수
 function selectTrack(trackNum) {
     const btn1 = document.getElementById('btn-1');
