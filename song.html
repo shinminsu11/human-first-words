@@ -108,7 +108,10 @@
     <div class="now-playing">
         현재 재생 중 : <span id="current-title">복희 여와 한글을 노래하다</span>
     </div>
-
+<!-- 반복 재생 버튼 -->
+<button id="loop-btn" onclick="toggleLoop()" style="padding: 10px; margin-top: 10px; border-radius: 5px; cursor: pointer;">
+  🔁 반복 재생: 끄기
+</button>
     <!-- 오디오 플레이어 -->
     <audio id="audio-player" controls>
         <source id="audio-source" src="fuxi.mp3" type="audio/mpeg">
@@ -446,6 +449,32 @@
 
         audioPlayer.load();
     }
+
+// 반복 재생 상태를 기억하는 변수
+let isLooping = false;
+
+// 반복 재생 버튼을 눌렀을 때 실행되는 함수
+function toggleLoop() {
+    const audioPlayer = document.getElementById('audio-player');
+    const loopBtn = document.getElementById('loop-btn');
+    
+    // 상태를 반대로 뒤집음 (꺼짐 -> 켜짐, 켜짐 -> 꺼짐)
+    isLooping = !isLooping; 
+    
+    // 오디오 플레이어에 반복 설정 적용
+    audioPlayer.loop = isLooping; 
+    
+    // 버튼 모양과 글씨 바꾸기
+    if (isLooping) {
+        loopBtn.innerText = "🔄 반복 재생: 켜짐";
+        loopBtn.style.backgroundColor = "#4CAF50"; // 켜지면 초록색으로 변경
+        loopBtn.style.color = "white";
+    } else {
+        loopBtn.innerText = "🔁 반복 재생: 끄기";
+        loopBtn.style.backgroundColor = ""; // 꺼지면 원래 색상으로 복구
+        loopBtn.style.color = "black";
+    }
+}
 </script>
 
 </body>
