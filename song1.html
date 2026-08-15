@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>복희 여와 음악 2곡</title>
+
     <style>
         body {
             background-color: #121214;
@@ -14,6 +15,7 @@
             padding: 20px;
             text-align: center;
         }
+
         .image-container {
             margin: 20px 0;
             background: #1a1a1e;
@@ -21,22 +23,26 @@
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.5);
         }
+
         img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
         }
+
         h1 {
             font-size: 1.8rem;
             margin: 30px 0 20px 0;
             color: #ffffff;
         }
+
         .playlist {
             display: flex;
             gap: 12px;
             justify-content: center;
             margin-bottom: 20px;
         }
+
         .track-btn {
             flex: 1;
             background-color: #26262b;
@@ -51,11 +57,13 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.2);
             text-align: center;
         }
+
         .track-btn.active {
             background-color: #3b82f6;
             color: #ffffff;
             box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
         }
+
         .now-playing {
             background-color: #1a1a1e;
             padding: 14px;
@@ -65,16 +73,19 @@
             margin-bottom: 15px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
+
         .now-playing span {
             color: #fbbf24;
             font-weight: bold;
         }
+
         audio {
             width: 100%;
             border-radius: 30px;
             background: #ffffff;
             margin-bottom: 30px;
         }
+
         .lyrics-container {
             background-color: #1a1a1e;
             padding: 25px;
@@ -90,6 +101,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <div class="image-container">
@@ -98,26 +110,37 @@
 
     <h1>한글원리 음악 2곡</h1>
 
-    <!-- 곡 선택 버튼 영역 -->
+    <!-- 곡 선택 버튼 -->
     <div class="playlist">
-        <button class="track-btn active" id="btn-1" onclick="selectTrack(1)">🎵 서로 바라보는 소리1</button>
-        <button class="track-btn" id="btn-2" onclick="selectTrack(2)">🎵 서로 바라보는 소리2</button>
+        <button class="track-btn active"
+                id="btn-1"
+                onclick="selectTrack(1)">
+            🎵 서로 바라보는 소리1
+        </button>
+
+        <button class="track-btn"
+                id="btn-2"
+                onclick="selectTrack(2)">
+            🎵 서로 바라보는 소리2
+        </button>
     </div>
 
-    <!-- 현재 재생 중 표시 -->
+    <!-- 현재 재생 중 -->
     <div class="now-playing">
-        현재 재생 중 : <span id="current-title">서로 바라보는 소리1</span>
+        현재 재생 중 :
+        <span id="current-title">서로 바라보는 소리1</span>
     </div>
-<button id="loop-btn" onclick="toggleLoop()" style="padding: 10px; margin-top: 10px; border-radius: 5px; cursor: pointer;">
-  🔁 반복 재생: 끄기
-</button>
-    <!-- 오디오 플레이어 -->
+
+    <!-- 오디오 -->
     <audio id="audio-player" controls>
-        <source id="audio-source" src="face1.mp3" type="audio/mpeg">
+        <source id="audio-source"
+                src="face1.mp3"
+                type="audio/mpeg">
+
         브라우저가 오디오 태그를 지원하지 않습니다.
     </audio>
 
-    <!-- 가사 출력 영역 -->
+    <!-- 가사 -->
     <div class="lyrics-container" id="lyrics-display">
 
 [Verse 1]
@@ -231,12 +254,21 @@
 
 좌에서 우로, 우에서 좌로
 서로를 바라보는 소리
+
     </div>
 
+
 <script>
+
+    /* =========================
+       곡 데이터
+       ========================= */
+
     const track1 = {
         title: "서로 바라보는 소리1",
+
         src: "face1.mp3",
+
         lyrics: `
 [Verse 1]
 처음엔 아무 말도 없었지
@@ -351,9 +383,12 @@
 서로를 바라보는 소리`
     };
 
+
     const track2 = {
         title: "서로 바라보는 소리2",
+
         src: "face2.mp3",
+
         lyrics: `
 [Verse 1]
 처음엔 아무 말도 없었지
@@ -441,56 +476,106 @@
 우린 미래를 말하게 돼`
     };
 
+
+    /* =========================
+       현재 곡 번호
+       ========================= */
+
+    let currentTrack = 1;
+
+
+    /* =========================
+       곡 선택
+       ========================= */
+
     function selectTrack(trackNum) {
+
         const btn1 = document.getElementById('btn-1');
         const btn2 = document.getElementById('btn-2');
-        const currentTitle = document.getElementById('current-title');
-        const audioSource = document.getElementById('audio-source');
-        const audioPlayer = document.getElementById('audio-player');
-        const lyricsDisplay = document.getElementById('lyrics-display');
+
+        const currentTitle =
+            document.getElementById('current-title');
+
+        const audioSource =
+            document.getElementById('audio-source');
+
+        const audioPlayer =
+            document.getElementById('audio-player');
+
+        const lyricsDisplay =
+            document.getElementById('lyrics-display');
+
+
+        currentTrack = trackNum;
+
 
         if (trackNum === 1) {
+
             btn1.classList.add('active');
             btn2.classList.remove('active');
-            currentTitle.innerText = track1.title;
-            audioSource.src = track1.src;
-            lyricsDisplay.innerText = track1.lyrics;
-        } else {
-            btn2.classList.add('active');
-            btn1.classList.remove('active');
-            currentTitle.innerText = track2.title;
-            audioSource.src = track2.src;
-            lyricsDisplay.innerText = track2.lyrics;
+
+            currentTitle.innerText =
+                track1.title;
+
+            audioSource.src =
+                track1.src;
+
+            lyricsDisplay.innerText =
+                track1.lyrics;
+
         }
 
+        else {
+
+            btn2.classList.add('active');
+            btn1.classList.remove('active');
+
+            currentTitle.innerText =
+                track2.title;
+
+            audioSource.src =
+                track2.src;
+
+            lyricsDisplay.innerText =
+                track2.lyrics;
+        }
+
+
         audioPlayer.load();
+
+        audioPlayer.play().catch(function() {
+            // 스마트폰 브라우저가 자동재생을 막는 경우
+        });
     }
 
-    // 반복 재생 상태를 기억하는 변수
-let isLooping = false;
 
-// 반복 재생 버튼을 눌렀을 때 실행되는 함수
-function toggleLoop() {
-    const audioPlayer = document.getElementById('audio-player');
-    const loopBtn = document.getElementById('loop-btn');
-    
-    // 상태를 반대로 뒤집음 (꺼짐 -> 켜짐, 켜짐 -> 꺼짐)
-    isLooping = !isLooping; 
-    
-    // 오디오 플레이어에 반복 설정 적용
-    audioPlayer.loop = isLooping; 
-    
-    // 버튼 모양과 글씨 바꾸기
-    if (isLooping) {
-        loopBtn.innerText = "🔄 반복 재생: 켜짐";
-        loopBtn.style.backgroundColor = "#4CAF50"; // 켜지면 초록색으로 변경
-        loopBtn.style.color = "white";
-    } else {
-        loopBtn.innerText = "🔁 반복 재생: 끄기";
-        loopBtn.style.backgroundColor = ""; // 꺼지면 원래 색상으로 복구
-        loopBtn.style.color = "black";
-    }
-}
+    /* =========================
+       2곡 자동 반복
+       ========================= */
+
+    const audioPlayer =
+        document.getElementById('audio-player');
+
+
+    audioPlayer.addEventListener(
+        'ended',
+        function() {
+
+            if (currentTrack === 1) {
+
+                selectTrack(2);
+
+            }
+
+            else {
+
+                selectTrack(1);
+
+            }
+
+        }
+    );
+
 </script>
 
 </body>
