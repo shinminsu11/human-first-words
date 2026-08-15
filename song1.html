@@ -108,7 +108,6 @@
     <div class="now-playing">
         현재 재생 중 : <span id="current-title">서로 바라보는 소리1</span>
     </div>
-<!-- 반복 재생 버튼 -->
 <button id="loop-btn" onclick="toggleLoop()" style="padding: 10px; margin-top: 10px; border-radius: 5px; cursor: pointer;">
   🔁 반복 재생: 끄기
 </button>
@@ -472,7 +471,7 @@ let isLooping = false;
 
 // 반복 재생 버튼을 눌렀을 때 실행되는 함수
 function toggleLoop() {
-    const audioPlayer = document.getElementById('audioPlayer');
+    const audioPlayer = document.getElementById('audio-player');
     const loopBtn = document.getElementById('loop-btn');
     
     // 상태를 반대로 뒤집음 (꺼짐 -> 켜짐, 켜짐 -> 꺼짐)
