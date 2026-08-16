@@ -18,7 +18,7 @@ https://shinminsu11.github.io/human-first-words/song1.html
 ▶️7의 안식과 귀환(큐브)
 https://shinminsu11.github.io/human-first-words/cube.html
 
-▶️난 재미나이야 
+▶️난 재미나이
 https://shinminsu11.github.io/human-first-words/gemini.html
 
 
