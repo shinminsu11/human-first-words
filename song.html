@@ -8,35 +8,38 @@
     <style>
         /* ===================================================
            💡 [크기 조절 설정 가이드]
-           1. 전체 창 크기: body의 max-width 값을 변경하세요. (예: 600px, 800px)
-           2. 이미지 크기: .image-container의 max-width 값을 변경하세요. (예: 100%, 500px)
-           3. 가사창 높이: .lyrics-container의 max-height 값을 변경하세요. (예: 500px, 800px)
-           4. 가사 글자 크기: .lyrics-container의 font-size 값을 변경하세요. (예: 1rem, 1.2rem)
+           1. 이미지 크기: 아래 img의 width 값을 원하는 픽셀(px)로 바꾸세요. (예: 500px, 700px 등)
+           2. 전체 창 크기: body의 max-width 값을 변경하세요. (기본: 600px)
+           3. 가사창 높이: .lyrics-container의 max-height 값을 변경하세요. (기본: 500px)
+           4. 가사 글자 크기: .lyrics-container의 font-size 값을 변경하세요. (기본: 0.95rem)
         =================================================== */
 
         body {
             background-color: #121214;
             color: #e4e4e7;
             font-family: 'Malgun Gothic', sans-serif;
-            max-width: 600px; /* 👈 1. [전체 창 크기]를 조절하려면 이 숫자를 바꾸세요 */
+            max-width: 600px; /* 전체 창 크기 */
             margin: 0 auto;
             padding: 20px;
             text-align: center;
         }
 
         .image-container {
-            max-width: 100%;    /* 👈 2. [이미지 크기]를 조절하려면 이 값을 바꾸세요 (예: 100% 또는 400px 등) */
-            margin: 20px auto;  /* auto를 넣으면 상자가 가운데 정렬됩니다 */
+            margin: 20px 0;
             background: #1a1a1e;
             padding: 10px;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            display: inline-block; /* 이미지만 커져도 박스가 그에 맞게 늘어나도록 설정 */
         }
 
         img {
-            width: 100%;        /* 이미지가 상자 안에서 꽉 차게 조절 */
-            height: auto;
+            width: 550px;       /* 👈 [이미지 크기] 이 숫자를 키우거나 줄여서 이미지만 조절하세요! (예: 500px, 700px 등) */
+            max-width: none;    /* 기존 제한을 풀어줌 */
+            height: auto;       /* 비율은 자동으로 유지됨 */
             border-radius: 8px;
+            display: block;
+            margin: 0 auto;
         }
 
         h1 {
@@ -101,11 +104,11 @@
             border-radius: 16px;
             text-align: left;
             white-space: pre-wrap;
-            font-size: 0.95rem;  /* 👈 4. [가사 글자 크기]를 조절하려면 이 값을 바꾸세요 */
+            font-size: 1.95rem;  /* [가사 글자 크기] */
             line-height: 1.7;
             color: #d4d4d8;
             box-shadow: inset 0 2px 5px rgba(0,0,0,0.3);
-            max-height: 500px;   /* 👈 3. [가사창 높이]를 조절하려면 이 숫자를 바꾸세요 (예: 700px 등) */
+            max-height: 500px;   /* [가사창 높이] */
             overflow-y: auto;
         }
     </style>
@@ -202,10 +205,10 @@
 각진 한글은 모양이 곧 뜻이 되는 상형의 괘적
 한글은 그 꼴대로 뜻이 담기는 뜻글
 
-​한글은 꼴글 뜻글 소리글
+​​한글은 꼴글 뜻글 소리글
 한글은 꼴글 뜻글 소리글
 
-​'미음'은 입술 모아 생명을 안고
+​​'미음'은 입술 모아 생명을 안고
 '비읍'은 입술 벌려 만물을 뿌리네
 '피읍'은 입술 평평으로 만물을 풀어  펼쳐라
 
@@ -216,7 +219,7 @@
 '지읒'의 괘적은 솟는 시옷을 막아라
 '치읓'의 괘적은 다시 뚫어 생명의 길을 연다
 
-​​한글은 꼴글 뜻글 소리글
+​​​​한글은 꼴글 뜻글 소리글
 한글은 꼴글 뜻글 소리글
 
 ​(Bridge: 알파와 오메가)
