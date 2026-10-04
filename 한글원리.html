@@ -127,7 +127,7 @@
 이것이 곧 만물 창조의 첫 숨결이라!
 ​
 ​[제2절] 하나 둘 앞뒤 대칭
-​하나 카라 앞으로 뻗어 가는 첫 파동이여,
+​​하나 카라 앞으로 뻗어 가는 첫 파동이여,
 둘 뜨르 안으로 들어오는 첫 숨결이라.
 
 셋넷 동서 대칭
@@ -188,32 +188,25 @@
         const audioPlayer = document.getElementById('audioPlayer');
         const statusText = document.getElementById('statusText');
 
-        // 상단 파란 버튼 클릭 시 재생/일시정지 연동
+        // 상단 파란 버튼 클릭 시: 이미 재생 중이든 아니든 처음부터 다시 재생
         playBtn.addEventListener('click', () => {
-            if (audioPlayer.paused) {
-                audioPlayer.play().then(() => {
-                    statusText.textContent = "현재 재생 중";
-                    playBtn.textContent = "일시정지";
-                }).catch(error => {
-                    console.error("재생 실패:", error);
-                    statusText.textContent = "오디오 파일을 확인해주세요.";
-                });
-            } else {
-                audioPlayer.pause();
-                statusText.textContent = "일시정지됨";
-                playBtn.textContent = "쓸기자판 재생";
-            }
+            audioPlayer.currentTime = 0; // 재생 위치를 0초(처음)로 이동
+            audioPlayer.play().then(() => {
+                statusText.textContent = "처음부터 다시 재생 중";
+                playBtn.textContent = "처음부터 다시 재생";
+            }).catch(error => {
+                console.error("재생 실패:", error);
+                statusText.textContent = "오디오 파일을 확인해주세요.";
+            });
         });
 
-        // 오디오 자체 재생 바를 통해 재생 상태가 바뀔 때 버튼 텍스트 동기화
+        // 오디오 자체 재생 바를 통해 상태가 바뀔 때 텍스트 동기화
         audioPlayer.addEventListener('play', () => {
             statusText.textContent = "현재 재생 중 (자동 반복)";
-            playBtn.textContent = "일시정지";
         });
 
         audioPlayer.addEventListener('pause', () => {
             statusText.textContent = "일시정지됨";
-            playBtn.textContent = "쓸기자판 재생";
         });
     </script>
 
