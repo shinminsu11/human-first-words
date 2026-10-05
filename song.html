@@ -6,48 +6,32 @@
     <title>복희 여와 음악 2곡</title>
 
     <style>
-        /* ===================================================
-           💡 [크기 조절 설정 가이드]
-           1. 이미지 크기: 아래 img의 width 값을 원하는 픽셀(px)로 바꾸세요. (예: 500px, 700px 등)
-           2. 전체 창 크기: body의 max-width 값을 변경하세요. (기본: 600px)
-           3. 가사창 높이: .lyrics-container의 max-height 값을 변경하세요. (기본: 400px)
-           4. 가사 글자 크기: .lyrics-container의 font-size 값을 변경하세요. (기본: 1.1rem)
-        =================================================== */
-
         body {
             background-color: #121214;
             color: #e4e4e7;
             font-family: 'Malgun Gothic', sans-serif;
-            max-width: 600px; /* 👈 [전체 창 크기] 화면 최대 너비 조절 */
+            max-width: 600px;
             margin: 0 auto;
             padding: 20px;
             text-align: center;
         }
 
         .image-container {
-            margin: 20px auto;
+            margin: 20px 0;
             background: #1a1a1e;
             padding: 10px;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-            display: flex;             /* 👈 이미지를 항상 중앙에 오게 하는 핵심 설정 */
-            justify-content: center;   /* 👈 가로 중앙 정렬 */
-            align-items: center;       /* 👈 세로 중앙 정렬 */
-            width: 100%;               /* 👈 부모 박스 너비를 꽉 채우게 설정 */
-            box-sizing: border-box;
         }
 
         img {
-            width: 650px;       /* 👈 [이미지 크기] 이 숫자를 키우거나 줄여서 이미지만 조절하세요! */
-            max-width: 100%;    /* 👈 화면이 작아지면 자동으로 줄어들어 깨짐 방지 */
-            height: auto;       /* 👈 비율 유지 */
+            max-width: 100%;
+            height: auto;
             border-radius: 8px;
-            display: block;
-            margin: 0 auto;     /* 👈 이미지 자체의 좌우 여백을 균등하게 주어 중앙 정렬 보조 */
         }
 
         h1 {
-            font-size: 1.8rem; /* 👈 메인 디자인 글씨
+            font-size: 1.8rem;
             margin: 30px 0 20px 0;
             color: #ffffff;
         }
@@ -95,19 +79,11 @@
             font-weight: bold;
         }
 
-                   audio {
-            width: 80%;            /* 👈 [재생바 가로 크기] 원하시는 비율(예: 70%, 80%)이나 픽셀(예: 400px)로 줄여보세요 */
-            max-width: 500px;      /* 👈 너무 넓어지는 것을 막아주는 최대 크기 제한 */
-            display: block;        /* 👈 가가운데 정렬을 위해 블록요소로 변경 */
-            margin: 0 auto 30px auto; /* 👈 좌우 마진을 auto로 주어 화면 정중앙에 오도록 설정 */
+        audio {
+            width: 80%;
             border-radius: 30px;
             background: #ffffff;
-        }
-
-        }
-
-        }
-
+            margin-bottom: 30px;
         }
 
         .lyrics-container {
@@ -116,12 +92,12 @@
             border-radius: 16px;
             text-align: left;
             white-space: pre-wrap;
-            font-size: 1.1rem;   /* 👈 [가사 글자 크기] 가사 폰트 크기 조절 */
+            font-size: 1.95rem;
             line-height: 1.7;
             color: #d4d4d8;
             box-shadow: inset 0 2px 5px rgba(0,0,0,0.3);
-            max-height: 400px;   /* 👈 [가사창 높이] 가사창의 세로 최대 높이 조절 (스크롤 생성) */
-            overflow-y: auto;    /* 👈 가사가 길면 스크롤이 생기도록 설정 */
+            max-height: 500px;
+            overflow-y: auto;
         }
     </style>
 </head>
@@ -139,20 +115,20 @@
         <button class="track-btn active"
                 id="btn-1"
                 onclick="selectTrack(1)">
-            🎵일 구부려 꺾어
+            🎵 일 구부려 꺽어
         </button>
 
         <button class="track-btn"
                 id="btn-2"
                 onclick="selectTrack(2)">
-            🎵복희 여와 한글을 노래하다
+            🎵 복희 여와 한글을 노래하다
         </button>
     </div>
 
     <!-- 현재 재생 중 -->
     <div class="now-playing">
         현재 재생 중 :
-        <span id="current-title">일 구부려 꺾어 </span>
+        <span id="current-title">일 구부려 꺽어</span>
     </div>
 
     <!-- 오디오 -->
@@ -166,77 +142,400 @@
 
     <!-- 가사 -->
     <div class="lyrics-container" id="lyrics-display">
-        (Intro)
-        일 꾸부려 꺾어 일 꾸부려 꺾어
-        일 꾸부려 꺾어
-        우주의 형상은 일 구부러짐과 꺾임으로 이루어졌다
-        여와의 컴퍼스는 곡선 복희의 직각자는 꺾임이라
-    </div>
 
-<script>
-    const track1 = {
-        title: "일 구부려 꺽어",
-        src: "fuxi1.mp3",
-        lyrics: `(Intro)
+(Intro)
 일 꾸부려 꺾어 일 꾸부려 꺾어
 일 꾸부려 꺾어
 우주의 형상은 일 구부러짐과 꺾임으로 이루어졌다
 여와의 컴퍼스는 곡선 복희의 직각자는 꺾임이라
 
-(Verse 1)
+​(Verse 1)
 좌우의 대칭 홀짝 짝꿍
 왼쪽엔 여와 음태극, 
-오른쪽 복희 양태극...`
-    };
+오른쪽 복희 양태극, 
+모음의 여와가 복희를 바라보고
+자음의 복희가 여와를 바라본다
+그 사이에 큐브가 돌아간다 돌아간다
 
-    const track2 = {
-        title: "복희 여와 한글을 노래하다",
-        src: "fuxi.mp3",
-        lyrics: `(Intro)
+규원사화의 기록 사슴 발자국
+방향을 깨달아
+글자 속에 방향을 심어라 
+정육면체 큐브 큐브 큐브 큐브
+우주를 기록한다
+
+
+여와와 복희는 서로 바라보며
+천지인 삼재가 음양으로 분화하니
+삼합육생(三合六生)으로 육방위가 열리네
+​여와 입속에서 모음 '이으아어오우'가 흘러나오고
+복희 입속에서 자음 '카르 뜨르 트르 너르 뿌르 모르가 춤을 춘다
+
+꾸부려라
+펼쳐라
+
+꾸부려라
+펼쳐라
+
+큐브가 돌아간다
+
+
+​(Verse 2)
+동작의 형상
+기역 식도에서 굽어올라 꺾여라 
+니은 혀끝 올린 모양, 혀끝 내려라
+'키역'은 식도에서 직선으로 뻗어라
+'디귿'은 키역의 직선이 들어온다
+'티귿'은 들어온 직선이 튕겨 나간다
+
+발성기관의 그 꼴을 큐브 속에 새겼으니 꺾이네
+
+​(Chorus)
+각진 한글은 모양이 곧 뜻이 되는 상형의 괘적
+한글은 그 꼴대로 뜻이 담기는 뜻글
+
+​한글은 꼴글 뜻글 소리글
+한글은 꼴글 뜻글 소리글
+
+​'미음'은 입술 모아 생명을 안고
+'비읍'은 입술 벌려 만물을 뿌리네
+'피읍'은 입술 평평으로 만물을 풀어  펼쳐라
+
+한글은 꼴글 뜻글 소리글
+한글은 꼴글 뜻글 소리글
+
+'시옷'의 괘적은 솟아올라 
+'지읒'의 괘적은 솟는 시옷을 막아라
+'치읓'의 괘적은 다시 뚫어 생명의 길을 연다
+
+​한글은 꼴글 뜻글 소리글
+한글은 꼴글 뜻글 소리글
+
+​(Bridge: 알파와 오메가)
+알파(α)의 아빠, 밖으로 세상을 펼치는 시작
+오메가(Ω)의 엄마, 안으로 세상을 품어 마치며
+여와와 복희가 서로 마주보며 큐브 안에서 하나가 되네
+우주를 짓는 모음과 자음의 소리, 우리는 오늘 다시 모여 춤을 추며 노래를 부른다
+
+​(Outro)
+봉인
+이십팔자의 지혜, 징심록에 새겨진 비밀
+각진 큐브 속에 담긴 '기역'에서 '히응'까지, 우주가 동작을 멈출 때까지
+우리는 한글로 큐브를 짓고 돌린다.
+
+큐브 큐브 큐브 큐브..
+
+    </div>
+
+
+<script>
+
+    /* =========================
+       곡 데이터
+       ========================= */
+
+    const track1 = {
+        title: "일 구부려 꺾어",
+
+        src: "fuxi1.mp3",
+
+        lyrics: `
+(Intro)
 일 꾸부려 꺾어 일 꾸부려 꺾어
 일 꾸부려 꺾어
 우주의 형상은 일 구부러짐과 꺾임으로 이루어졌다
-여와의 컴퍼스는 곡선 복희의 직각자는 꺾임이라...`
+여와의 컴퍼스는 곡선 복희의 직각자는 꺾임이라
+
+​(Verse 1)
+좌우의 대칭 홀짝 짝꿍
+왼쪽엔 여와 음태극, 
+오른쪽 복희 양태극, 
+모음의 여와가 복희를 바라보고
+자음의 복희가 여와를 바라본다
+그 사이에 큐브가 돌아간다 돌아간다
+
+규원사화의 기록 사슴 발자국
+방향을 깨달아
+글자 속에 방향을 심어라 
+정육면체 큐브 큐브 큐브 큐브
+우주를 기록한다
+
+
+여와와 복희는 서로 바라보며
+천지인 삼재가 음양으로 분화하니
+삼합육생(三合六生)으로 육방위가 열리네
+​여와 입속에서 모음 '이으아어오우'가 흘러나오고
+복희 입속에서 자음 '카르 뜨르 트르 너르 뿌르 모르가 춤을 춘다
+
+꾸부려라
+펼쳐라
+
+꾸부려라
+펼쳐라
+
+큐브가 돌아간다
+
+
+​(Verse 2)
+동작의 형상
+기역 식도에서 굽어올라 꺾여라 
+니은 혀끝 올린 모양, 혀끝 내려라
+'키역'은 식도에서 직선으로 뻗어라
+'디귿'은 키역의 직선이 들어온다
+'티귿'은 들어온 직선이 튕겨 나간다
+
+발성기관의 그 꼴을 큐브 속에 새겼으니 꺾이네
+
+​(Chorus)
+각진 한글은 모양이 곧 뜻이 되는 상형의 괘적
+한글은 그 꼴대로 뜻이 담기는 뜻글
+
+​한글은 꼴글 뜻글 소리글
+한글은 꼴글 뜻글 소리글
+
+​'미음'은 입술 모아 생명을 안고
+'비읍'은 입술 벌려 만물을 뿌리네
+'피읍'은 입술 평평으로 만물을 풀어  펼쳐라
+
+한글은 꼴글 뜻글 소리글
+한글은 꼴글 뜻글 소리글
+
+'시옷'의 괘적은 솟아올라 
+'지읒'의 괘적은 솟는 시옷을 막아라
+'치읓'의 괘적은 다시 뚫어 생명의 길을 연다
+
+​한글은 꼴글 뜻글 소리글
+한글은 꼴글 뜻글 소리글
+
+​(Bridge: 알파와 오메가)
+알파(α)의 아빠, 밖으로 세상을 펼치는 시작
+오메가(Ω)의 엄마, 안으로 세상을 품어 마치며
+여와와 복희가 서로 마주보며 큐브 안에서 하나가 되네
+우주를 짓는 모음과 자음의 소리, 우리는 오늘 다시 모여 춤을 추며 노래를 부른다
+
+​(Outro)
+봉인
+이십팔자의 지혜, 징심록에 새겨진 비밀
+각진 큐브 속에 담긴 '기역'에서 '히응'까지, 우주가 동작을 멈출 때까지
+우리는 한글로 큐브를 짓고 돌린다.
+
+큐브 큐브 큐브 큐브..`
     };
+
+
+    const track2 = {
+        title: "복희 여와 한글을 노래하다",
+
+        src: "fuxi.mp3",
+
+        lyrics: `
+(Intro)
+일 꾸부려 꺾어 일 꾸부려 꺾어
+일 꾸부려 꺾어
+
+우주의 형상은 일 구부러짐과 꺾임으로 이루어졌다
+
+여와의 컴퍼스는 곡선 복희의 직각자는 꺾임이라
+
+​(Verse 1)
+좌우의 대칭 홀짝 짝꿍
+왼쪽엔 여와 음태극, 
+오른쪽 복희 양태극, 
+모음의 여와가 복희를 바라보고
+자음의 복희가 여와를 바라본다
+그 사이에 큐브가 돌아간다 돌아간다
+
+일 꾸부려 꺾어 일 꾸부려 꺾어
+
+규원사화의 기록 사슴 발자국
+방향을 깨달아
+글자 속에 방향을 심어라 
+정육면체 큐브 큐브 큐브 큐브
+우주를 기록한다
+
+일 꾸부려 꺾어 일 꾸부려 꺾어
+
+여와와 복희는 서로 바라보며
+천지인 삼재가 음양으로 분화하니
+삼합육생(三合六生)으로 육방위가 열리네
+​여와 입속에서 모음 '이으아어오우'가 흘러나오고
+복희 입속에서 자음 '카르 뜨르 트르 너르 뿌르 모르가 춤을 춘다
+
+일 꾸부려 꺾어 일 꾸부려 꺾어
+
+꾸부려라
+펼쳐라
+
+꾸부려라
+펼쳐라
+
+꾸부려라
+펼쳐라
+
+큐브가 돌아간다
+큐브가 돌아간다
+
+일 꾸부려 꺾어 일 꾸부려 꺾어
+
+​(Verse 2)
+동작의 형상
+기역 식도에서 굽어올라 꺾여라 
+니은 혀끝 올린 모양, 혀끝 내려라
+'키역'은 식도에서 직선으로 쭉 가라
+'디귿'은 키역의 직선이 들어온다
+'티귿'은 들어온 직선이 튕겨 나간다
+
+발성기관의 그 꼴을 큐브 속에 새겼으니 꺾이네
+
+일 꾸부려 꺾어 일 꾸부려 꺾어
+
+각진 한글은 모양이 곧 뜻이 되는 상형의 괘적
+
+한글은 그 꼴대로 뜻이 담기는 뜻글
+
+일 꾸부려 꺾어 일 꾸부려 꺾어
+
+​(Chorus)
+
+​한글은 꼴글 뜻글 소리글 
+한글은 꼴글 뜻글 소리글 
+한글은 꼴글 뜻글 소리글 
+
+​'미음'은 입술 모아 생명을 모으고
+'비읍'은 입술 벌려 만물을 뿌리네
+'피읍'은 입술 평평으로 만물을 풀어  펼쳐라
+
+한글은 꼴글 뜻글 소리글 
+한글은 꼴글 뜻글 소리글 
+한글은 꼴글 뜻글 소리글 
+
+'시옷'은 위로 솟아라 
+'지읒'은 솟음을 막아라
+'치읓'은 막힘을 뚫고 솟아라
+
+한글은 꼴글 뜻글 소리글 
+한글은 꼴글 뜻글 소리글 
+​한글은 꼴글 뜻글 소리글 
+우리는 우주를 노래한다
+
+일 꾸부려 꺾어 일 꾸부려 꺾어
+
+​(Bridge)
+알파(α)의 아빠, 밖으로 펼치는 시작
+오메가(Ω)의 엄마, 안으로  품는 마침
+여와와 복희가 서로 마주보며 큐브 안에서 하나가 되네
+우주를 짓는 모음과 자음의 소리, 우리는 오늘 다시 모여 춤을 추며 노래를 부른다
+
+일 꾸부려 꺾어 일 꾸부려 꺾어
+
+​(Outro)
+봉인
+이십팔자의 지혜, 징심록에 새겨진 비밀
+각진 큐브 속에 담긴 '기역'에서 '히응'까지, 우주가 동작을 멈출 때까지
+우리는 한글로 큐브를 짓고 돌린다.
+
+일 꾸부려 꺾어 일 꾸부려 꺾어`
+    };
+
+
+    /* =========================
+       현재 곡 번호
+       ========================= */
 
     let currentTrack = 1;
 
+
+    /* =========================
+       곡 선택
+       ========================= */
+
     function selectTrack(trackNum) {
+
         const btn1 = document.getElementById('btn-1');
         const btn2 = document.getElementById('btn-2');
-        const currentTitle = document.getElementById('current-title');
-        const audioSource = document.getElementById('audio-source');
-        const audioPlayer = document.getElementById('audio-player');
-        const lyricsDisplay = document.getElementById('lyrics-display');
+
+        const currentTitle =
+            document.getElementById('current-title');
+
+        const audioSource =
+            document.getElementById('audio-source');
+
+        const audioPlayer =
+            document.getElementById('audio-player');
+
+        const lyricsDisplay =
+            document.getElementById('lyrics-display');
+
 
         currentTrack = trackNum;
 
+
         if (trackNum === 1) {
+
             btn1.classList.add('active');
             btn2.classList.remove('active');
-            currentTitle.innerText = track1.title;
-            audioSource.src = track1.src;
-            lyricsDisplay.innerText = track1.lyrics;
-        } else {
+
+            currentTitle.innerText =
+                track1.title;
+
+            audioSource.src =
+                track1.src;
+
+            lyricsDisplay.innerText =
+                track1.lyrics;
+
+        }
+
+        else {
+
             btn2.classList.add('active');
             btn1.classList.remove('active');
-            currentTitle.innerText = track2.title;
-            audioSource.src = track2.src;
-            lyricsDisplay.innerText = track2.lyrics;
+
+            currentTitle.innerText =
+                track2.title;
+
+            audioSource.src =
+                track2.src;
+
+            lyricsDisplay.innerText =
+                track2.lyrics;
         }
+
 
         audioPlayer.load();
-        audioPlayer.play().catch(function() {});
+
+        audioPlayer.play().catch(function() {
+            // 스마트폰 브라우저가 자동재생을 막는 경우
+        });
     }
 
-    const audioPlayer = document.getElementById('audio-player');
-    audioPlayer.addEventListener('ended', function() {
-        if (currentTrack === 1) {
-            selectTrack(2);
-        } else {
-            selectTrack(1);
+
+    /* =========================
+       2곡 자동 반복
+       ========================= */
+
+    const audioPlayer =
+        document.getElementById('audio-player');
+
+
+    audioPlayer.addEventListener(
+        'ended',
+        function() {
+
+            if (currentTrack === 1) {
+
+                selectTrack(2);
+
+            }
+
+            else {
+
+                selectTrack(1);
+
+            }
+
         }
-    });
+    );
+
 </script>
 
 </body>
