@@ -6,6 +6,10 @@
 
 🎵[노래모음]
 
+
+​▶️애초말동작소리
+https://shinminsu11.github.io/human-first-words/한글원리.html
+
 ​▶️태극
 https://shinminsu11.github.io/human-first-words/
 
