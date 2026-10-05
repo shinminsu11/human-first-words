@@ -95,11 +95,15 @@
             font-weight: bold;
         }
 
-                        audio {
-            width: 100%;
+                   audio {
+            width: 80%;            /* 👈 [재생바 가로 크기] 원하시는 비율(예: 70%, 80%)이나 픽셀(예: 400px)로 줄여보세요 */
+            max-width: 500px;      /* 👈 너무 넓어지는 것을 막아주는 최대 크기 제한 */
+            display: block;        /* 👈 가가운데 정렬을 위해 블록요소로 변경 */
+            margin: 0 auto 30px auto; /* 👈 좌우 마진을 auto로 주어 화면 정중앙에 오도록 설정 */
             border-radius: 30px;
             background: #ffffff;
-            margin-bottom: 30px;
+        }
+
         }
 
         }
