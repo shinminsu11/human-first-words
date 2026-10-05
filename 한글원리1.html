@@ -214,7 +214,7 @@
             audioPlayer.currentTime = 0; // 재생 위치를 0초(처음)로 이동
             audioPlayer.play().then(() => {
                 statusText.textContent = "처음부터 다시 재생 중";
-                playBtn.textContent = "🎵 애초말 동작소리";
+                playBtn.textContent = "🎵 한글원리";
             }).catch(error => {
                 console.error("재생 실패:", error);
                 statusText.textContent = "오디오 파일을 확인해주세요.";
