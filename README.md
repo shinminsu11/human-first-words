@@ -8,7 +8,7 @@
 
 
 ​▶️애초말동작소리
-https://shinminsu11.github.io/human-first-words/한글원리.html
+https://shinminsu11.github.io/human-first-words/애초말.html
 
 ​▶️한글원리
 https://shinminsu11.github.io/human-first-words/한글원리1.html
