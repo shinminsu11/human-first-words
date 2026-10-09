@@ -11,7 +11,7 @@
 https://shinminsu11.github.io/human-first-words/애초말.html
 
 ​▶️한글원리
-https://shinminsu11.github.io/human-first-words/한글원리1.html
+https://shinminsu11.github.io/human-first-words/한글원리.html
 
 ​▶️태극
 https://shinminsu11.github.io/human-first-words/
