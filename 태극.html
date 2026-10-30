@@ -105,13 +105,13 @@
     </div>
 
     <!-- 파란 버튼 -->
-   <button class="play-btn" id="playBtn">🎵 애초말동작소리</button>
+   <button class="play-btn" id="playBtn">🎵 태극이 돌아간다</button>
    <div class="status" id="statusText">버튼을 눌러주세요</div>
 
     <!-- 오디오 재생 바 영역 -->
     <div class="audio-container">
         <audio id="audioPlayer" controls loop>
-            <source src="한글노래.mp3" type="audio/mp3">
+            <source src="태극이 돌아간다.mp3" type="audio/mp3">
             브라우저가 오디오 태그를 지원하지 않습니다.
         </audio>
     </div>
@@ -194,7 +194,7 @@
             audioPlayer.currentTime = 0; // 재생 위치를 0초(처음)로 이동
             audioPlayer.play().then(() => {
                 statusText.textContent = "처음부터 다시 재생 중";
-                playBtn.textContent = "🎵 애초말동작소리";
+                playBtn.textContent = "🎵 태극이 돌아간다";
             }).catch(error => {
                 console.error("재생 실패:", error);
                 statusText.textContent = "오디오 파일을 확인해주세요.";
