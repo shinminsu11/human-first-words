@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8개의 애초말동작소리</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        /* 파란색 버튼 스타일 */
+        .play-btn {
+            background-color: #2979ff;
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 15px 0 5px 0;
+            transition: background-color 0.2s;
+        }
+        .play-btn:hover {
+            background-color: #1565c0;
+        }
+        .status {
+            font-size: 14px;
+            color: #b0b0b0;
+            margin-bottom: 20px;
+        }
+        /* 오디오 재생 바 영역 컨테이너 */
+        .audio-container {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 25px;
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .audio-container p {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+            color: #ffb74d;
+        }
+        /* HTML5 기본 오디오 바 디자인 조정 */
+        audio {
+            width: 100%;
+            height: 40px;
+        }
+        /* 이미지 스타일 */
+        .image-container {
+            padding: 10px;
+            background-color: #1e1e1e;
+            margin-bottom: 20px;
+            max-width: 600px;
+            text-align: center;
+        }
+        .image-container img {
+            width: 100%;
+            border-radius: 8px;
+            display: block;
+        }
+        /* 가사 영역 스타일 (크기 축소 및 스크롤 적용) */
+        .lyrics-box {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 500px;
+            width: 140%;
+            height: 400px;            /* 가사창 높이 고정 (원하는 크기로 조절 가능) */
+            overflow-y: auto;         /* 위아래로 내리고 올릴 수 있도록 스크롤 생성 */
+            text-align: center;
+            line-height: 1.6;
+            color: #cccccc;
+            white-space: pre-line;    /* 줄바꿈 유지 */
+            box-sizing: border-box;
+            font-size: 26px;  
+        }
+        .lyrics-title {
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 이미지 삽입 영역 -->
+    <div class="image-container">
+        <div class="lyrics-title">8개의 애초말동작소리</div>
+        <img src="8려지음.png">
+    </div>
+
+    <!-- 파란 버튼 -->
+   <button class="play-btn" id="playBtn">🎵 태극이 돌아간다</button>
+   <div class="status" id="statusText">버튼을 눌러주세요</div>
+
+    <!-- 오디오 재생 바 영역 -->
+    <div class="audio-container">
+        <audio id="audioPlayer" controls loop>
+            <source src="태극이 돌아간다.mp3" type="audio/mp3">
+            브라우저가 오디오 태그를 지원하지 않습니다.
+        </audio>
+    </div>
+
+    <!-- 가사 삽입 영역 (스크롤 적용) -->
+    <div class="lyrics-box">
+​
+[intro]
+(whisper, distant)
+
+하나… 둘… 셋… 넷…  
+다섯… 여섯… 일곱…  
+여덟… 아홉… 열…
+
+짝…
+
+---
+
+[Core]
+
+태극이 돌아간다  
+
+오른쪽  
+오른다  
+라이트 양  
+
+왼쪽  
+내린다  
+레프트 음  
+
+앞뒤로 하나 둘  
+카라 가다  
+뜨르 들어온다  
+전후로 선이 생겨난다  
+
+
+[Verse 1]
+
+태극이 돌아간다  
+
+오른쪽  
+오른다  
+라이트 양  
+
+왼쪽  
+내린다  
+레프트 음  
+
+동서로 셋 넷  
+트르 너르 
+좌우로 선이 이어져  
+면이 된다  
+
+
+[Verse 2]
+
+태극이 돌아간다  
+
+오른쪽  
+오른다  
+라이트 양  
+
+왼쪽  
+내린다  
+레프트 음  
+
+남북으로 다섯 여섯  
+뿌르 모르 
+쌓여 올라  
+입체가 된다  
+
+위와 아래  
+갈라지고  
+공간이 열린다  
+
+확장을 끝마치고 안으로 닫아라
+
+짝! 짝! 짝!
+짝! 짝!
+
+[Build Up – 7→8→9]
+
+일 꾸부려
+일곱  
+꾸르  
+꾸부려 꼬부려 꺾어  
+큐브 모양이 된다  
+
+여덟  
+피르 피르 펼쳐라  
+온 방향으로  
+펼쳐진다  
+
+피르 피르 피르  
+팔방 팔괘가 열린다  
+
+펼쳐진 모든 것  
+
+아 꼬불 꼬부  
+아홉  
+
+태극이 돌아간다
+
+오른쪽  
+오른다  
+라이트 양  
+
+왼쪽  
+내린다  
+레프트 음  
+
+태극이 구르고 흐르고 돌아간다  
+
+---
+
+[Build Up]
+
+하나 둘 셋 넷  
+다섯 여섯 일곱  
+여덟 아홉 열  
+
+
+(DEAD SILENCE)
+---
+
+[Final Drop: Bass and Kick]
+
+카라 뜨르 트르 너르  
+뿌르 모르 꾸르 피르  
+팔려지음 터진다  
+
+KICK IN
+
+카라 가다  
+뜨르 들어온다  
+
+태극이 돌아간다
+
+오른쪽
+라이트 양  
+오른다  
+
+왼쪽
+레프트 음  
+내린다  
+
+팔로 펼쳐  
+아홉으로 굴린다  
+
+태극으로  
+순환한다  
+
+짝!   짝!   짝!
+
+---
+
+[Break: Hand Claps only] 
+
+짝   짝   
+
+[Final Message 🌍]
+
+손과 손이 만난다  
+
+사람과 사람이 만난다  
+세계가 하나로 모인다  
+
+모든 방향이  
+하나로 모인다  
+
+
+[Outro]
+
+태극이 돌아간다  
+
+오른쪽은 오른다  
+왼쪽은 내린다  
+
+카라는 간다  
+뜨르는 들어온다  
+
+오른손 왼손
+손바닥이 합쳐진다  
+
+십  
+
+완성  
+
+    </div>
+
+    <script>
+        const playBtn = document.getElementById('playBtn');
+        const audioPlayer = document.getElementById('audioPlayer');
+        const statusText = document.getElementById('statusText');
+
+        // 상단 파란 버튼 클릭 시: 이미 재생 중이든 아니든 처음부터 다시 재생
+        playBtn.addEventListener('click', () => {
+            audioPlayer.currentTime = 0; // 재생 위치를 0초(처음)로 이동
+            audioPlayer.play().then(() => {
+                statusText.textContent = "처음부터 다시 재생 중";
+                playBtn.textContent = "🎵 태극이 돌아간다";
+            }).catch(error => {
+                console.error("재생 실패:", error);
+                statusText.textContent = "오디오 파일을 확인해주세요.";
+            });
+        });
+
+        // 오디오 자체 재생 바를 통해 상태가 바뀔 때 텍스트 동기화
+        audioPlayer.addEventListener('play', () => {
+            statusText.textContent = "현재 재생 중 (자동 반복)";
+        });
+
+        audioPlayer.addEventListener('pause', () => {
+            statusText.textContent = "일시정지됨";
+        });
+    </script>
+
+</body>
+</html>
