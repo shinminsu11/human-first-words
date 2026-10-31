@@ -18,13 +18,14 @@ https://shinminsu11.github.io/human-first-words/한글노래.html
 
 ▶️한글그림
 https://shinminsu11.github.io/human-first-words/한글그림.html
-
-한글그림(우주글)
 https://shinminsu11.github.io/human-first-words/우주글.html
-
+https://shinminsu11.github.io/human-first-words/우주글1.html
 
 ​▶️태극
 https://shinminsu11.github.io/human-first-words/
+https://shinminsu11.github.io/human-first-words/태극.html
+https://shinminsu11.github.io/human-first-words/태극1.html
+
 
 ▶️복희 여와
 https://shinminsu11.github.io/human-first-words/song.html
