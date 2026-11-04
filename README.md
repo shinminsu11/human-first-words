@@ -16,8 +16,8 @@ https://shinminsu11.github.io/human-first-words/한글원리.html
 ▶️한글노래
 https://shinminsu11.github.io/human-first-words/한글노래.html
 
-▶️한글그림 
-​https://shinminsu11.github.io/human-first-words/한글그림.html
+▶️한글노래
+https://shinminsu11.github.io/human-first-words/한글그림.html
 
 ​​&ensp;​&ensp;​&ensp;   https://shinminsu11.github.io/human-first-words/우주글.html
 
