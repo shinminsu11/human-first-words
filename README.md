@@ -26,7 +26,7 @@ https://shinminsu11.github.io/human-first-words/우주글1.html
 ​▶️태극
 https://shinminsu11.github.io/human-first-words/
 
-https://shinminsu11.github.io/human-first-words/태극.html
+   https://shinminsu11.github.io/human-first-words/태극.html
 
 https://shinminsu11.github.io/human-first-words/태극1.html
 
