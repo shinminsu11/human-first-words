@@ -28,7 +28,7 @@ https://shinminsu11.github.io/human-first-words/한글그림.html
 ▶️언어설계도
 https://shinminsu11.github.io/human-first-words/언어설계도.html
 
-​​&ensp;​&ensp;​&ensp;   https://shinminsu11.github.io/human-first-words/언어설계도.html
+​​&ensp;​&ensp;​&ensp;   https://shinminsu11.github.io/human-first-words/언어설계도1.html
 
 ​▶️태극
 https://shinminsu11.github.io/human-first-words/
