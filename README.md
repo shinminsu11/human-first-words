@@ -12,7 +12,6 @@ https://shinminsu11.github.io/human-first-words/애초말.html
 
 ▶️한글원리
 https://shinminsu11.github.io/human-first-words/
-https://shinminsu11.github.io/human-first-words/한글노래.html
 
 ▶️꼴글
 https://shinminsu11.github.io/human-first-words/한글그림.html
