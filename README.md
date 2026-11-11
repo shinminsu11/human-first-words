@@ -10,7 +10,8 @@
 ​▶️애초말동작소리
 https://shinminsu11.github.io/human-first-words/애초말.html
 
-▶️한글노래
+▶️한글원리
+https://shinminsu11.github.io/human-first-words/
 https://shinminsu11.github.io/human-first-words/한글노래.html
 
 ▶️꼴글
@@ -28,9 +29,7 @@ https://shinminsu11.github.io/human-first-words/언어설계도.html
 ​​&ensp;​&ensp;​&ensp;   https://shinminsu11.github.io/human-first-words/언어설계도1.html
 
 ​▶️태극
-https://shinminsu11.github.io/human-first-words/
-
-​​&ensp;​&ensp;​&ensp;   https://shinminsu11.github.io/human-first-words/태극.html
+https://shinminsu11.github.io/human-first-words/태극.html
 
 ​​&ensp;​&ensp;​&ensp;   https://shinminsu11.github.io/human-first-words/태극1.html
 
