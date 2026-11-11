@@ -10,8 +10,8 @@
 ​▶️애초말동작소리
 https://shinminsu11.github.io/human-first-words/애초말.html
 
-▶️한글원리
-https://shinminsu11.github.io/human-first-words/한글원리.html
+▶️바라봄
+https://shinminsu11.github.io/human-first-words/바라봄.html
 
 ▶️한글노래
 https://shinminsu11.github.io/human-first-words/한글노래.html
