@@ -14,13 +14,14 @@ https://shinminsu11.github.io/human-first-words/애초말.html
 https://shinminsu11.github.io/human-first-words/
 
 ▶️꼴글
-https://shinminsu11.github.io/human-first-words/한글그림.html
 
 ​​&ensp;​&ensp;​&ensp;   https://shinminsu11.github.io/human-first-words/꼴글.html
 
 ​​&ensp;​&ensp;​&ensp;   https://shinminsu11.github.io/human-first-words/꼴글(여성).html
 
 ​​&ensp;​&ensp;​&ensp;   https://shinminsu11.github.io/human-first-words/한글꼴글.html
+
+​​&ensp;​&ensp;​&ensp;   https://shinminsu11.github.io/human-first-words/한글그림.html
 
 ▶️언어설계도
 https://shinminsu11.github.io/human-first-words/언어설계도.html
