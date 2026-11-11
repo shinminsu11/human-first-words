@@ -34,7 +34,7 @@ https://shinminsu11.github.io/human-first-words/태극.html
 ▶️복희 여와
 https://shinminsu11.github.io/human-first-words/song.html
 
-▶️서로 마주보는 소리
+▶️바라보는 소리
 https://shinminsu11.github.io/human-first-words/바라봄.html
 
 ​​&ensp;​&ensp;​&ensp;   https://shinminsu11.github.io/human-first-words/song1.html
