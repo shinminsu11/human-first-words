@@ -10,9 +10,6 @@
 ​▶️애초말동작소리
 https://shinminsu11.github.io/human-first-words/애초말.html
 
-▶️바라봄
-https://shinminsu11.github.io/human-first-words/바라봄.html
-
 ▶️한글노래
 https://shinminsu11.github.io/human-first-words/한글노래.html
 
@@ -43,6 +40,7 @@ https://shinminsu11.github.io/human-first-words/
 https://shinminsu11.github.io/human-first-words/song.html
 
 ▶️서로 마주보는 소리
+https://shinminsu11.github.io/human-first-words/바라봄.html
 https://shinminsu11.github.io/human-first-words/song1.html
 
 ▶️7의 안식과 귀환(큐브)
