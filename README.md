@@ -7,9 +7,6 @@
 🎵[노래모음]
 
 
-​▶️애초말동작소리
-https://shinminsu11.github.io/human-first-words/애초말.html
-
 ▶️한글원리
 https://shinminsu11.github.io/human-first-words/
 
