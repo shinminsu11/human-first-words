@@ -14,7 +14,7 @@ https://shinminsu11.github.io/human-first-words/애초말.html
 https://shinminsu11.github.io/human-first-words/
 
 ▶️꼴글
-​https://shinminsu11.github.io/human-first-words/꼴글.html
+https://shinminsu11.github.io/human-first-words/꼴글.html
 
 ​​&ensp;​&ensp;​&ensp;   https://shinminsu11.github.io/human-first-words/꼴글(여성).html
 
